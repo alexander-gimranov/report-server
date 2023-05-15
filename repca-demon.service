@@ -1,0 +1,12 @@
+[Unit]
+Description=Reports Server API
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/srv/report-server/www/
+ExecStart=/usr/share/dotnet/dotnet /srv/report-server/www/ReportsServer.API.dll
+
+[Install]
+WantedBy=multi-user.target
+

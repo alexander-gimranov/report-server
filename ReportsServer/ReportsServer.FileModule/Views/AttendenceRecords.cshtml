@@ -1,0 +1,139 @@
+﻿@model ReportsServer.Core.IPrepareReport
+<div id="report">
+    <div id="report-params">
+        <p>@Model.Id</p>
+        <p>@Model.Name</p>
+        <p>@Model.Params</p>
+        <p>@Model.Template</p>
+    </div>
+    <div id="report-head">
+        <span>ИООО &quot;ЭКСАДЕЛ&quot;</span>
+        <span>Табель</span>
+        <span>учета рабочего времени за %sMonth%</span>
+    </div>
+    <div id="report-data">
+        <table>
+            <tr height="16" style='height: 12.00pt; mso-height-source: userset; mso-height-alt: 240;'>
+                <td class="xl69" height="125" rowspan="3" style='height: 93.75pt; border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>№<br/>п/п</td>
+                <td class="xl70" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>Ф.И.О.</td>
+                <td class="xl70" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>Должность (профессия)</td>
+                <td class="xl70" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>
+                    <span style='display: none;'>Офис</span>
+                </td>
+                <td class="xl70" colspan="39" rowspan="2" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>Отработанные часы по дням месяца</td>
+                <td class="xl100" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>Очередной<span style='display: none;'><span style='mso-spacerun: yes;'>&nbsp;</span>отпуск</span></td>
+                <td class="xl100" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>Адм.отпус<span style='display: none;'>к</span></td>
+                <td class="xl100" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>Отпуск по <span style='display: none;'>уходу за ребенком</span></td>
+                <td class="xl100" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>Болезнь</td>
+                <td class="xl100" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>Отраб. Дней</td>
+                <td class="xl100" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>Отраб. Дней</td>
+                <td class="xl100" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>в т.ч. Командиров.</td>
+                <td class="xl100" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>неявки на р<span style='display: none;'>аботу</span></td>
+                <td class="xl100" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>гос. Служб<span style='display: none;'>а</span></td>
+                <td class="xl98" colspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>в т.ч.<span style='mso-spacerun: yes;'>&nbsp;</span></td>
+                <td class="xl108" rowspan="3" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>Использованный <br/>отпуск в 20__ году</td>
+            </tr>
+            <tr height="88" style='height: 66.00pt; mso-height-source: userset; mso-height-alt: 1320;'>
+                <td class="xl108" rowspan="2" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>кол-во <br/>израсходованных<br/>отгулов</td>
+                <td class="xl108" rowspan="2" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>Остаток отгулов</td>
+                <td class="xl108" rowspan="2" style='border-right: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext;' x:str>кол-во ночных часов</td>
+            </tr>
+            <tr height="21" style='height: 15.75pt;'>
+                <td class="xl71" x:num>1</td>
+                <td class="xl71" x:num>2</td>
+                <td class="xl71" x:num>3</td>
+                <td class="xl71" x:num>4</td>
+                <td class="xl71" x:num>5</td>
+                <td class="xl71" x:num>6</td>
+                <td class="xl71" x:num>7</td>
+                <td class="xl71" x:num>8</td>
+                <td class="xl71" x:num>9</td>
+                <td class="xl71" x:num>10</td>
+                <td class="xl71" x:num>11</td>
+                <td class="xl71" x:num>12</td>
+                <td class="xl71" x:num>13</td>
+                <td class="xl71" x:num>14</td>
+                <td class="xl71" x:num>15</td>
+                <td class="xl71" x:num>16</td>
+                <td class="xl71" x:num>17</td>
+                <td class="xl71" x:num>18</td>
+                <td class="xl71" x:num>19</td>
+                <td class="xl71" x:num>20</td>
+                <td class="xl71" x:num>21</td>
+                <td class="xl71" x:num>22</td>
+                <td class="xl71" x:num>23</td>
+                <td class="xl71" x:num>24</td>
+                <td class="xl71" x:num>25</td>
+                <td class="xl71" x:num>26</td>
+                <td class="xl71" x:num>27</td>
+                <td class="xl71" x:num>28</td>
+                <td class="xl71" x:num>29</td>
+                <td class="xl71" x:num>30</td>
+                <td class="xl71" x:num>31</td>
+                <td class="xl98" x:str>
+                    <span style='display: none;'>Я</span>
+                </td>
+                <td class="xl98" x:str>
+                    <span style='display: none;'>Е</span>
+                </td>
+                <td class="xl98" x:str>
+                    <span style='display: none;'>ОТ</span>
+                </td>
+                <td class="xl98" x:str>
+                    <span style='display: none;'>А</span>
+                </td>
+                <td class="xl98" x:str>
+                    <span style='display: none;'>Б</span>
+                </td>
+                <td class="xl98" x:str>
+                    <span style='display: none;'>ОЖ</span>
+                </td>
+                <td class="xl98" x:str>
+                    <span style='display: none;'>К</span>
+                </td>
+                <td class="xl98" x:str>
+                    <span style='display: none;'>Г</span>
+                </td>
+            </tr>
+            <tr height="21" style='height: 15.75pt;'>
+                <td class="xl72" height="21" colspan="48" style='height: 15.75pt; border-right: 1.0pt solid windowtext; border-bottom: none;' x:str>Администрация</td>
+                <td class="xl109" colspan="8" style='border-right: 1.0pt solid windowtext; border-bottom: none;'></td>
+            </tr>
+            @{
+                var idx = 0;
+                foreach (var collection in Model.Collections)
+                {
+                    idx++;
+                    if (idx == 1)
+                    {
+                        <tr height="21" style='height:15.75pt;'>
+                            <td class="xl72" height="21" colspan="48" style='height:15.75pt;border-right:1.0pt solid windowtext;border-bottom:none;' x:str>Администрация</td>
+                            <td class="xl109" colspan="8" style='border-right:1.0pt solid windowtext;border-bottom:none;'></td>
+                        </tr>
+
+                    }
+                    else if (idx == 2)
+                    {
+                        <tr height="21" style='height:15.75pt;'>
+                            <td class="xl77" height="21" colspan="48" style='height:15.75pt;border-right:.5pt solid windowtext;border-bottom:.5pt solid windowtext;' x:str>Отдел программирования,<span style='mso-spacerun:yes;'>&nbsp; </span>отдел внедрения, администрирования и поддержки (ВАП) и отдел тестирования</td>
+                            <td class="xl93" colspan="8" style='border-right:.5pt solid windowtext;border-bottom:.5pt solid windowtext;'></td>
+                        </tr>
+
+                    }
+                    foreach (var row in collection)
+                    {
+                         <tr>
+                             @foreach (var key in row.Keys)
+                             {
+                                 <td class="f_@key">@row[key]</td>
+                             }
+                         </tr>
+                    }
+                }
+            }
+        </table>
+    </div>
+    <div id="report-footer">
+
+    </div>
+</div>

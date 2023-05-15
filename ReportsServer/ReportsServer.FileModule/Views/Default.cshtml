@@ -1,0 +1,37 @@
+﻿@model ReportsServer.Core.IPrepareReport
+<div id="report">
+    <div id="report-params" hidden="true">
+        <p>@Model.Id</p>
+        <p>@Model.Name</p>
+        <p>@Model.Params</p>
+        <p>@Model.Template</p>
+    </div>
+    <div id="report-data">
+        @{
+            var idx = 0;
+            foreach (var collection in Model.Collections)
+            {
+                idx++;
+                <table id="coll_@idx">
+                    <thead>
+                    @foreach (var key in collection.First().Keys)
+                    {
+                        <th class="f_@key.Replace(" ", "_") ">@key</th>
+                    }
+                    </thead>
+                    <tbody>
+                    @foreach (var row in collection)
+                    {
+                        <tr>
+                            @foreach (var key in row.Keys)
+                            {
+                                <td class="f_@key.Replace(" ", "_")">@row[key]</td>
+                            }
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            }
+        }
+    </div>
+</div>

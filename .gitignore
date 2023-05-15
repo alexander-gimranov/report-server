@@ -1,0 +1,25 @@
+################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+ReportsServer/ReportsServer.Core/bin/
+ReportsServer/ReportsServer.Core/obj/
+ReportsServer/ReportsServer.DAL/bin/
+ReportsServer/ReportsServer.DAL/obj/
+ReportsServer/ReportsServer.FileModule/bin/
+ReportsServer/ReportsServer.FileModule/obj/
+ReportsServer/ReportsServer.Processor/bin/
+ReportsServer/ReportsServer.Processor/obj/
+ReportsServer/ReportsServer.REST/bin/
+ReportsServer/ReportsServer.REST/obj/
+ReportsServer/ReportsServer.sln.DotSettings.user
+ReportsServer/.vs/
+ReportsServer/ReportsServer.REST/.vs/
+/.vs/slnx.sqlite
+ReportsServer/ReportsServer.API/bin/
+ReportsServer/ReportsServer.API/log
+ReportsServer/ReportsServer.API/obj
+www
+
+/ReportsServer/.vscode/launch.json
+/ReportsServer/.vscode/tasks.json

@@ -1,0 +1,10 @@
+﻿{
+  "connections": {
+    "mssql": {
+      "server": "(local)",
+      "database": "webtime",
+      "user": "wt",
+      "password": "test"
+    }
+  }
+}
